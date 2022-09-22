@@ -1,7 +1,14 @@
 {
   "name": "nlw-esports-frontend",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Next Level Week app ESports theme",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dimas-prates/nlw-esports-frontend.git"
+  },
+  "author": "Dimas Prates",
+  "license": "MIT",
   "type": "commonjs",
   "scripts": {
     "dev": "vite",
