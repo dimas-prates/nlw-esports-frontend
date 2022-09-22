@@ -2,21 +2,73 @@
   "name": "nlw-esports-frontend",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.1.0",
+    "autoprefixer": "^10.4.12",
+    "commitizen": "^4.2.5",
+    "commitlint-config-gitmoji": "^2.2.5",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "^8.23.1",
+    "husky": "^8.0.1",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8",
     "typescript": "^4.6.4",
     "vite": "^3.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog",
+      "types": {
+        ":sparkles: feat": {
+          "description": "A new feature",
+          "title": "Features"
+        },
+        ":adhesive_bandage: fix": {
+          "description": "A bug fix"
+        },
+        ":memo: doc": {
+          "description": "Documentation only changes"
+        },
+        ":pencil2: style": {
+          "description": "Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)"
+        },
+        ":recycle: refactor": {
+          "description": "A code change that neither fixes a bug nor adds a feature"
+        },
+        ":zap: perf": {
+          "description": "A code change that improves performance"
+        },
+        ":test_tube: test": {
+          "description": "Adding missing tests or correcting existing tests"
+        },
+        ":package: build": {
+          "description": "Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)"
+        },
+        ":bricks: ci": {
+          "description": "Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)"
+        },
+        ":wrench: chore": {
+          "description": "Other changes that don't modify src or test files"
+        },
+        ":rewind: revert": {
+          "description": "Reverts a previous commit",
+          "prefix": "tsdts"
+        }
+      }
+    }
   }
 }
